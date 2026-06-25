@@ -1,0 +1,273 @@
+{
+  "package": "pacote-onboarding-cdf-v1.2-consolidado",
+  "version": "1.2",
+  "cdf_context": "az-eastus-1/radix-dev",
+  "layers": {
+    "pitch": [
+      "pitch/Pitch-Trilha-Onboarding-CDF.pptx",
+      "pitch/Pitch-Trilha-Onboarding-CDF-roteiro.md",
+      "pitch/TEMPLATE-Pitch-do-Projeto.pptx",
+      "pitch/TEMPLATE-Pitch-do-Projeto-roteiro.md"
+    ],
+    "checklist_master": "checklists/CHECKLIST-MESTRE.md",
+    "docs_entry": [
+      "README.md",
+      "COMECE-AQUI.md",
+      "docs/entrada/INDICE.md",
+      "docs/governanca/00-LEIA-ME-PRIMEIRO.md",
+      "docs/entrada/FRAMEWORK-DE-ONBOARDING.md",
+      "docs/entrada/DOCUMENTACAO-DO-CONTEUDO.md",
+      "docs/entrada/MODELOS-COMPARTILHADOS.md",
+      "docs/entrada/GUIA-DE-EXECUCAO.md"
+    ]
+  },
+  "notes": {
+    "xlsx": "Planilhas citadas em versoes antigas sao itens de backlog (a produzir).",
+    "secrets": "Nunca versionar .env/token; usar .env.example."
+  },
+  "videos": [
+    {
+      "id": "V02",
+      "title": "V02 - IAM e acesso seguro",
+      "type": "orientation",
+      "training_folder": "docs/treinamento/V02-IAM-E-ACESSO-SEGURO",
+      "roteiro": "docs/treinamento/V02-IAM-E-ACESSO-SEGURO/V02-IAM-E-ACESSO-SEGURO.md",
+      "files": [
+        "CHECKLIST.md",
+        "V02-IAM-E-ACESSO-SEGURO.md",
+        "execucao-pratica.ipynb",
+        "matriz-acessos.xlsx"
+      ],
+      "checklist": "docs/treinamento/V02-IAM-E-ACESSO-SEGURO/CHECKLIST.md",
+      "explain_one_line": "Qual e o acesso minimo que preciso, onde solicito e como nao exponho segredos.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V03",
+      "title": "V03 - Autenticacao e ciclo de vida seguro de um space",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V03-AUTENTICACAO-E-PRIMEIRA-CONEXAO-SEGURA",
+      "roteiro": "docs/treinamento/V03-AUTENTICACAO-E-PRIMEIRA-CONEXAO-SEGURA/V03-AUTENTICACAO-E-PRIMEIRA-CONEXAO.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V03-CICLO-DE-VIDA-DO-SPACE.md",
+        "V03-AUTENTICACAO-E-PRIMEIRA-CONEXAO.md",
+        "checklist-seguranca.md",
+        "v03-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V03-AUTENTICACAO-E-PRIMEIRA-CONEXAO-SEGURA/CHECKLIST.md",
+      "explain_one_line": "Como autenticar (OAuth/Bearer) e gerir o ciclo de vida de um space com seguranca.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V04",
+      "title": "V04 - Espacos, containers, views e data model",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V04-DMS-ESPACOS-CONTAINERS-E-VIEWS",
+      "roteiro": "docs/treinamento/V04-DMS-ESPACOS-CONTAINERS-E-VIEWS/V04-DMS-ESPACOS-CONTAINERS-E-VIEWS.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V04-HIERARQUIA-DMS.md",
+        "V04-DMS-ESPACOS-CONTAINERS-E-VIEWS.md",
+        "v04-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V04-DMS-ESPACOS-CONTAINERS-E-VIEWS/CHECKLIST.md",
+      "explain_one_line": "Como separar namespace (space), armazenamento (container) e interface (view).",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V05",
+      "title": "V05 - Relacoes e decisoes de modelagem",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V05-DMS-RELACOES-E-MODELAGEM",
+      "roteiro": "docs/treinamento/V05-DMS-RELACOES-E-MODELAGEM/V05-DMS-RELACOES-E-MODELAGEM.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V05-RELACOES-E-EDGES.md",
+        "V05-DMS-RELACOES-E-MODELAGEM.md",
+        "v05-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V05-DMS-RELACOES-E-MODELAGEM/CHECKLIST.md",
+      "explain_one_line": "Quando usar relacao direta, edge ou navegacao reversa e o impacto na consulta.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V06",
+      "title": "V06 - Contrato de leitura DMS",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V06-CONTRATO-DE-LEITURA-DMS",
+      "roteiro": "docs/treinamento/V06-CONTRATO-DE-LEITURA-DMS/V06-RAW-E-CONTRATO-DE-DADOS.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V06-CONTRATO-DE-LEITURA.md",
+        "V06-RAW-E-CONTRATO-DE-DADOS.md",
+        "v06-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V06-CONTRATO-DE-LEITURA-DMS/CHECKLIST.md",
+      "explain_one_line": "Como uma view define o contrato de leitura e por que ler sempre pelo ViewId.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V07",
+      "title": "V07 - Ingestao idempotente com SDK",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V07-INGESTAO-IDEMPOTENTE-COM-SDK",
+      "roteiro": "docs/treinamento/V07-INGESTAO-IDEMPOTENTE-COM-SDK/V07-INGESTAO-COM-SDK.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V07-INGESTAO-IDEMPOTENTE.md",
+        "V07-INGESTAO-COM-SDK.md",
+        "v07-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V07-INGESTAO-IDEMPOTENTE-COM-SDK/CHECKLIST.md",
+      "explain_one_line": "Por que `space + external_id` torna a ingestao segura para reexecucao.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V08",
+      "title": "V08 - Transformations: do dado de origem ao curado",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V08-TRANSFORMATIONS",
+      "roteiro": "docs/treinamento/V08-TRANSFORMATIONS/V08-TRANSFORMATIONS.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V08-TRANSFORMATIONS.md",
+        "V08-TRANSFORMATIONS.md",
+        "transformar-leituras.sql",
+        "v08-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V08-TRANSFORMATIONS/CHECKLIST.md",
+      "explain_one_line": "O ciclo de uma Transformation com destino DMS, sem mover dados na demo.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V09",
+      "title": "V09 - NodeApply e escrita segura",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V09-NODEAPPLY-E-ESCRITA-SEGURA",
+      "roteiro": "docs/treinamento/V09-NODEAPPLY-E-ESCRITA-SEGURA/V09-NODEAPPLY-E-ESCRITA-SEGURA.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V09-ESCRITA-SEGURA.md",
+        "V09-NODEAPPLY-E-ESCRITA-SEGURA.md",
+        "v09-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V09-NODEAPPLY-E-ESCRITA-SEGURA/CHECKLIST.md",
+      "explain_one_line": "A diferenca entre alterar e duplicar um node ao reaplicar.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V10",
+      "title": "V10 - Consultas com GraphQL e SDK",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V10-CONSULTAS-GRAPHQL-E-SDK",
+      "roteiro": "docs/treinamento/V10-CONSULTAS-GRAPHQL-E-SDK/V10-CONSULTAS-GRAPHQL-E-SDK.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V10-GRAPHQL-E-SDK.md",
+        "V10-CONSULTAS-GRAPHQL-E-SDK.md",
+        "consulta-bomba-referencia.graphql",
+        "v10-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V10-CONSULTAS-GRAPHQL-E-SDK/CHECKLIST.md",
+      "explain_one_line": "Como introspeccionar o schema e comparar GraphQL com o SDK de instancias.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V11",
+      "title": "V11 - Aplicacoes consumidoras: do dado a decisao",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V11-APLICACOES-CONSUMIDORAS",
+      "roteiro": "docs/treinamento/V11-APLICACOES-CONSUMIDORAS/V11-APLICACOES-CONSUMIDORAS.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V11-APP-CONSUMIDORA.md",
+        "V11-APLICACOES-CONSUMIDORAS.md",
+        "consulta-bomba-referencia.graphql",
+        "v11-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V11-APLICACOES-CONSUMIDORAS/CHECKLIST.md",
+      "explain_one_line": "Como uma tela consome o dado: filtro, estado vazio e ranking/KPI.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V12",
+      "title": "V12 - Qualidade, governanca e performance",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V12-QUALIDADE-GOVERNANCA-E-PERFORMANCE",
+      "roteiro": "docs/treinamento/V12-QUALIDADE-GOVERNANCA-E-PERFORMANCE/V12-QUALIDADE-GOVERNANCA-E-PERFORMANCE.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V12-QUALIDADE-E-PERFORMANCE.md",
+        "V12-QUALIDADE-GOVERNANCA-E-PERFORMANCE.md",
+        "v12-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V12-QUALIDADE-GOVERNANCA-E-PERFORMANCE/CHECKLIST.md",
+      "explain_one_line": "Como medir completude/unicidade/rejeicao e o custo de consulta ampla x limitada.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V13",
+      "title": "V13 - Atividade de projeto: integracao de ponta a ponta",
+      "type": "project_activity",
+      "training_folder": "docs/treinamento/V13-ATIVIDADE-DE-PROJETO",
+      "roteiro": "docs/treinamento/V13-ATIVIDADE-DE-PROJETO/V13-ARQUITETURA-E-RITUAIS-DO-PROJETO.md",
+      "files": [
+        "ATIVIDADE.md",
+        "CHECKLIST.md",
+        "V13-ARQUITETURA-E-RITUAIS-DO-PROJETO.md"
+      ],
+      "checklist": "docs/treinamento/V13-ATIVIDADE-DE-PROJETO/CHECKLIST.md",
+      "explain_one_line": "Como levo um dado da origem ate o DMS e o consulto de volta, e por que escolhi a rota.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V14",
+      "title": "V14 - Dados e integracoes do projeto (read-only)",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V14-DADOS-E-INTEGRACOES-DO-PROJETO",
+      "roteiro": "docs/treinamento/V14-DADOS-E-INTEGRACOES-DO-PROJETO/V14-DADOS-E-INTEGRACOES-DO-PROJETO.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V14-DADOS-E-INTEGRACOES.md",
+        "V14-DADOS-E-INTEGRACOES-DO-PROJETO.md",
+        "v14-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V14-DADOS-E-INTEGRACOES-DO-PROJETO/CHECKLIST.md",
+      "explain_one_line": "Como o catalogo DMS se relaciona com as integracoes (Transformations).",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V15",
+      "title": "V15 - Operacao, suporte e escalonamento (read-only)",
+      "type": "cdf_practice",
+      "training_folder": "docs/treinamento/V15-OPERACAO-SUPORTE-E-ESCALONAMENTO",
+      "roteiro": "docs/treinamento/V15-OPERACAO-SUPORTE-E-ESCALONAMENTO/V15-OPERACAO-SUPORTE-E-ESCALONAMENTO.md",
+      "files": [
+        "CHECKLIST.md",
+        "GUIA-V15-OPERACAO-E-SUPORTE.md",
+        "V15-OPERACAO-SUPORTE-E-ESCALONAMENTO.md",
+        "modelo-incidente.md",
+        "v15-execucao.ipynb"
+      ],
+      "checklist": "docs/treinamento/V15-OPERACAO-SUPORTE-E-ESCALONAMENTO/CHECKLIST.md",
+      "explain_one_line": "Como produzir um diagnostico seguro para triar e escalonar um chamado.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    },
+    {
+      "id": "V16",
+      "title": "V16 - Atividade de contribuicao documental",
+      "type": "project_activity",
+      "training_folder": "docs/treinamento/V16-ATIVIDADE-DE-PROJETO",
+      "roteiro": "docs/treinamento/V16-ATIVIDADE-DE-PROJETO/V16-CONTRIBUICAO-DOCUMENTAL.md",
+      "files": [
+        "ATIVIDADE.md",
+        "CHECKLIST.md",
+        "V16-CONTRIBUICAO-DOCUMENTAL.md"
+      ],
+      "checklist": "docs/treinamento/V16-ATIVIDADE-DE-PROJETO/CHECKLIST.md",
+      "explain_one_line": "Qual lacuna de documentacao tratei e como a melhoria ajuda o proximo.",
+      "cdf_context": "az-eastus-1/radix-dev"
+    }
+  ]
+}
