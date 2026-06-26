@@ -1,0 +1,5 @@
+query PumpsByArea($area: String!, $limit: Int!) {
+  listPumpView(filter: {equals: {property: "area", value: $area}}, limit: $limit) {
+    items { externalId name area status }
+  }
+}

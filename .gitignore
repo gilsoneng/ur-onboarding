@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+~$*.docx
+~$*.pptx
+*-CORRIGIDO.pptx
